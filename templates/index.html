@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#080d18"><title>Sign in · SecureCheck</title><link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}"><script src="{{ url_for('static',filename='login.js') }}" defer></script></head>
+<body><div class="ambient a"></div><div class="ambient b"></div><header class="topbar"><a class="brand" href="/">⌑ <span>Secure<span class="accent">Check</span></span></a><span class="top-status">● PRIVACY-FIRST DEMO</span></header>
+<main class="shell"><div class="project-credit"><h2>PASSWORD SECURITY TOOLKIT</h2><p>BY DEEPENDER KUMAR</p><p>B.Tech (CYBER-SECURITY) 7th Sem</p></div>
+<section class="hero"><div class="eyebrow">PASSWORD SECURITY TOOLKIT</div><h1>Your security,<br><span class="gradient">at a glance.</span></h1><p>Enter your details to open the SecureCheck demo and analyze a sample password on the next page.</p></section>
+<section class="card"><div class="heading"><div><small>WELCOME / 01</small><h2>Sign in to SecureCheck</h2></div><span class="icon">♢</span></div>
+<div class="warning"><b>Demo only:</b> This is not real account authentication. Do not enter a real account password. Use a made-up sample password.</div>
+{% if error %}<div class="error" role="alert">{{ error }}</div>{% endif %}
+<form action="{{ url_for('analyze_form') }}" method="post" autocomplete="off">
+<label for="name">Full name</label><input class="field" id="name" name="name" maxlength="80" placeholder="Enter your name" autocomplete="name" required>
+<label for="email">Email address</label><input class="field" id="email" name="email" type="email" maxlength="254" placeholder="you@example.com" autocomplete="email" required>
+<label for="password">Sample password to analyze</label><div class="pass"><input id="password" name="password" type="password" maxlength="256" placeholder="Enter a test password" autocomplete="new-password" required><button class="eye-button" id="toggle" type="button" aria-label="Show password" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg></button></div>
+<div class="meta"><span>Use a made-up password, not a real one.</span><span id="count">0 / 256</span></div><button class="submit" type="submit">Sign in &amp; analyze <span>↗</span></button></form>
+<p class="footnote">● Your details are not saved by this demo.</p></section><footer>SECURECHECK / LEARN. CHECK. PROTECT. <span>Educational demo · Not a real login system</span></footer></main></body></html>
