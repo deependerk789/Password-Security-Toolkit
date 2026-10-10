@@ -9,6 +9,8 @@ A modern, dark-themed Flask web app that evaluates a **sample password** and exp
 **Developed by Deepender Kumar**  
 *B.Tech (Cyber-Security) · 7th Semester*
 
+[🌐 **Live Demo**](https://password-security-toolkit-pcf2.onrender.com/) · [💻 GitHub Repository](https://github.com/deependerk789/Password-Security-Toolkit)
+
 [![Python](https://img.shields.io/badge/Python-3.12%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![Flask](https://img.shields.io/badge/Flask-3.x-000000?logo=flask&logoColor=white)](https://flask.palletsprojects.com/)
 [![Security Analysis](https://img.shields.io/badge/Analysis-zxcvbn-55E6D0?labelColor=101A2B)](https://github.com/dropbox/zxcvbn)
