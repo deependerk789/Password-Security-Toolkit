@@ -9,7 +9,7 @@ A modern, dark-themed Flask web app that evaluates a **sample password** and exp
 **Developed by Deepender Kumar**  
 *B.Tech (Cyber-Security) · 7th Semester*
 
-[🌐 **Live Demo**](https://password-security-toolkit-pcf2.onrender.com/) · [💻 GitHub Repository](https://github.com/deependerk789/Password-Security-Toolkit)
+[🌐 **Live Demo**](https://Deepender789.pythonanywhere.com/) · [💻 GitHub Repository](https://github.com/deependerk789/Password-Security-Toolkit)
 
 [![Python](https://img.shields.io/badge/Python-3.12%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![Flask](https://img.shields.io/badge/Flask-3.x-000000?logo=flask&logoColor=white)](https://flask.palletsprojects.com/)
@@ -182,17 +182,15 @@ curl -X POST http://127.0.0.1:5000/api/analyze \
 
 Returns a simple health status for local checks and hosting health checks.
 
-## ☁️ Deployment
+## ☁️ Live deployment
 
-The repository includes `Procfile` and `render.yaml` for a Render deployment setup.
+**Live demo:** https://Deepender789.pythonanywhere.com/
 
-1. Push the project to GitHub.
-2. Sign in to [Render](https://render.com/) and create a **Web Service** from this repository.
-3. Review the build command: `pip install -r requirements.txt`.
-4. Review the start command: `gunicorn app:app --workers 2 --threads 4 --timeout 30`.
-5. Deploy and test the generated HTTPS URL using made-up sample passwords only.
+This project is currently hosted on [PythonAnywhere](https://www.pythonanywhere.com/). The repository also contains `Procfile` and `render.yaml` from an earlier Render deployment configuration; they are not required to run the app locally or on PythonAnywhere.
 
-Free hosting plans and their limits can change; check the provider's current documentation before deployment. Do not expose Flask's development server or enable debug mode in production.
+To deploy your own copy, follow PythonAnywhere's current Flask web-app deployment instructions, configure the WSGI file to import `app` from this repository, install the packages from `requirements.txt` into the configured virtual environment, then reload the web app. Hosting plans and limits can change, so check the provider's current documentation.
+
+Do not expose Flask's development server or enable debug mode in production. Test the public demo using made-up sample passwords only.
 
 ## 🛡️ Security & privacy first
 
